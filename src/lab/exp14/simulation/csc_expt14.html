@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Critical Micelle Concentration</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="csc_expt14.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="csc_expt14.css">
+    <script src="../../../lib/js/velocity.min.js"></script>
+    <script src="../../../lib/js/ui.js"></script>
+    <script src="../../../lib/js/jQueryRotate.js"></script>
+</head>
+
+<body>
+    <div>
+        <img id="background" src="images/shapes/21.png">
+    </div>
+    <div class="image-container">
+        <img id="scale" src="images/sprites/anims/label.png">
+        <img id="rod" src="images/sprites/anims/1.png">
+        <img id="readings" src="images/sprites/readings/read0.png">
+        <img id="stand" src="images/shapes/37.png">
+        <img id="piece_stand" src="images/shapes/167.png">
+        <!-- These buttons have opacity 0 and are used only to cover the space between two consecutive measurements -->
+        <img id="button1" src="images/shapes/1.png">
+        <img id="button2" src="images/shapes/1.png">
+        <img id="button3" src="images/shapes/1.png">
+        <img id="button4" src="images/shapes/1.png">
+        <img id="button5" src="images/shapes/1.png">
+        <img id="button6" src="images/shapes/1.png">
+        <img id="button7" src="images/shapes/1.png">
+        <img id="button8" src="images/shapes/1.png">
+        <img id="button9" src="images/shapes/1.png">
+        <img id="button10" src="images/shapes/1.png">
+        <img id="button11" src="images/shapes/1.png">
+        <img id="button12" src="images/shapes/1.png">
+        <img id="button13" src="images/shapes/1.png">
+        <img id="button14" src="images/shapes/1.png">
+        <img id="button15" src="images/shapes/1.png">
+        <img id="button16" src="images/shapes/1.png">
+        <img id="button17" src="images/shapes/1.png">
+        <img id="button18" src="images/shapes/1.png">
+        <!-- When a button opacity 0 is clicked(previous buttons), a pointer appears to denote the selection-->
+        <img id="piece1" src="images/shapes/4.png" data-src="images/shapes/4.png" data-hover="images/shapes/6.png">
+        <img id="piece2" src="images/shapes/4.png" data-src="images/shapes/4.png" data-hover="images/shapes/6.png">
+        <img id="piece3" src="images/shapes/4.png" data-src="images/shapes/4.png" data-hover="images/shapes/6.png">
+        <img id="piece4" src="images/shapes/4.png" data-src="images/shapes/4.png" data-hover="images/shapes/6.png">
+        <img id="piece5" src="images/shapes/4.png" data-src="images/shapes/4.png" data-hover="images/shapes/6.png">
+        <img id="piece6" src="images/shapes/4.png" data-src="images/shapes/4.png" data-hover="images/shapes/6.png">
+        <img id="piece7" src="images/shapes/4.png" data-src="images/shapes/4.png" data-hover="images/shapes/6.png">
+        <img id="piece8" src="images/shapes/4.png" data-src="images/shapes/4.png" data-hover="images/shapes/6.png">
+        <img id="piece9" src="images/shapes/4.png" data-src="images/shapes/4.png" data-hover="images/shapes/6.png">
+        <img id="piece10" src="images/shapes/4.png" data-src="images/shapes/4.png" data-hover="images/shapes/6.png">
+        <img id="piece11" src="images/shapes/4.png" data-src="images/shapes/4.png" data-hover="images/shapes/6.png">
+        <img id="piece12" src="images/shapes/4.png" data-src="images/shapes/4.png" data-hover="images/shapes/6.png">
+        <img id="piece13" src="images/shapes/4.png" data-src="images/shapes/4.png" data-hover="images/shapes/6.png">
+        <img id="piece14" src="images/shapes/4.png" data-src="images/shapes/4.png" data-hover="images/shapes/6.png">
+        <img id="piece15" src="images/shapes/4.png" data-src="images/shapes/4.png" data-hover="images/shapes/6.png">
+        <img id="piece16" src="images/shapes/4.png" data-src="images/shapes/4.png" data-hover="images/shapes/6.png">
+        <img id="piece17" src="images/shapes/4.png" data-src="images/shapes/4.png" data-hover="images/shapes/6.png">
+        <img id="piece18" src="images/shapes/4.png" data-src="images/shapes/4.png" data-hover="images/shapes/6.png">
+        <img id="pour" src="images/sprites/flask_pour/0.png">
+        <img id="markings" src="images/sprites/readings/markings.png">
+        <img id="hand1" src="images/sprites/hand_point/hand.gif">
+        <img id="beak_water" src="images/sprites/beak_fill_water/22.png">
+        <img id="rod_button1" src="images/shapes/107.png">
+        <img id="rod_button2" src="images/shapes/107.png">
+        <img id="hand2" src="images/sprites/hand_point/hand.gif">
+        <img id="hand3" src="images/sprites/hand_point/hand.gif">
+    </div>
+    <div>
+        <p id="sample">sample solution</p>
+        <p id="conc">Select Concentration</p>
+        <p id="cell">Conductivity Cell</p>
+        <p id="click">Click</p>
+    </div>
+    <!-- The Reset Button -->
+    <input id="rst_btn" type="button" value="Reset Experiment" onClick="window.location.reload()">
+</body>
+
+</html>
